@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Mixer!!</title>
+		<img src="CatMain.png" alt="Main Cat" id="Cat" class="Cat">
+        <link rel="stylesheet" href="mixer.css">
+        <link rel="stylesheet" href="https://use.typekit.net/aar7jsq.css">
+        <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+
+        
+       <style>
+			body { margin: 0; }
+		</style>
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/"
+              }
+            }
+          </script>
+    </head>
+    <body>
+        
+
+        <main class="wrapper">
+        <!-- First Heading -->
+        <h1 class="firstHeading">Kitchen Mixer </h1>
+        <h1 class="secondHeading">The stability and functionality are improved with the addition of a sliding mechanism that enhances the design. </h1>
+        <img src="mixer1.png" alt="Mixer" id="mixer" class="mixer">
+    
+        <h2 class="AssemblyHeading">3D Model Drawings </h2>
+		<div class="drawing-container">
+			<img src="mixerdrawing.png" alt="Mixer Drawing" id="Mdraw1" class="drawing">
+			<img src="mixerdrawing2.png" alt="Mixer Drawing" id="Mdraw2" class="drawing">
+			<img src="mixerdrawing3.png" alt="Mixer Drawing" id="Mdraw3" class="drawing">
+		</div>
+
+
+        <h2 class="Final">Final Components </h2>
+		<div class="final-container">
+			<img src="mixerbase.png" alt="Mixer Drawing" id="Mbase" class="Final">
+			<img src="mixerbowl.png" alt="Mixer Drawing" id="Mbowl" class="Final">
+			<img src="mixerlid.png" alt="Mixer Drawing" id="Mlid" class="Final">
+		</div>
+        
+    </main>
+    
+        <script src="mixer.js"></script>
+        <script src="snowflakeCursor.js"></script>
+
+<!-- You can initialize it after the page is loaded -->
+<script>
+	window.addEventListener("load", () => {
+	new cursoreffects.snowflakeCursor();
+	  
+	});
+  </script>
+
+
+    </body>
+</html>

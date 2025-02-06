@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Headphone!!</title>
+        <img src="CatMain.png" alt="Main Cat" id="Cat" class="Cat">
+        <link rel="stylesheet" href="HP.css">
+        <link rel="stylesheet" href="https://use.typekit.net/aar7jsq.css">
+        <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+
+        
+       <style>
+			body { margin: 0; }
+		</style>
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/"
+              }
+            }
+            
+          </script>
+    </head>
+    <body>
+        
+
+        <main class="wrapper">
+        <!-- First Heading -->
+        <h1 class="firstHeading">ClearSound </h1>
+        <h1 class="secondHeading">- Pure, light, and as clear as the sound of a cloudless sky. </h1>
+
+        <img src="HPgreen.png" alt="Mixer" id="mixer">
+
+        <p id="introText">The ClearSound headphones are designed with a sky-blue aesthetic, featuring a translucent color that reflects a sense of relaxation. Intentionally creating an enjoyable and peaceful atmosphere.</p>
+        <h2 class="ConceptHeading">Concept </h2>
+
+        <img src="headphone.png" alt="Headphone" id="headphone" class="thumbnail">
+        <img src="HPblack.png" alt="Black BG Headphone" id="HPblack" class="thumbnail">
+        <img src="HPexploded.png" alt="Headphone Exploded View" id="HPexploded" class="thumbnail">
+        
+        <!--enlarge the image -->
+        <img id="enlargedImage" src="" alt="Enlarged Image">
+
+        <h2 class="AssemblyHeading">3D Model Drawings </h2>
+        <h2 class="ExplodedHeading">Exploded Views </h2>
+
+     <div class="concept-container">
+        <img src="HPconcept.png" alt="Headphone Concept" id="HPconcept" class="concept">
+        <img src="HPconcept2.png" alt="Headphone Concept" id="HPconcept2" class="concept">
+        <img src="HPconcept3.png" alt="Headphone Concept" id="HPconcept3" class="concept">
+    </div>
+        
+        
+
+    <div class="drawing-container">
+        <img src="AssemDrawing.png" alt="Assembly drawing" id="AssemDrawing" class="drawing">
+        <img src="AssemDrawing2.png" alt="Assembly drawing" id="AssemDrawing2" class="drawing">
+    </div>
+    <img src="Exploded8.png" alt="Exploded parts" id="HPexploded" class="Exploded">
+    
+    </main>
+    
+        <script src="HP.js"></script> 
+        <script src="snowflakeCursor.js"></script>
+       
+          
+        <script>
+            window.addEventListener("load", () => {
+            new cursoreffects.snowflakeCursor();
+              
+            });
+          </script>
+
+    </body>
+</html>

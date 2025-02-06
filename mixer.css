@@ -1,0 +1,107 @@
+body {
+    margin: 0;  
+    background-color: #72c5d3; 
+    
+}
+.firstHeading {
+    color: rgb(159, 244, 255);
+    text-align: center;  
+    position: absolute; 
+    font-family: "casey", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 150px;
+    top:-5%;
+    right: 5%; 
+    text-shadow:10px 2px 1px #000000;
+}
+.secondHeading {
+    color: rgb(143, 229, 255);  
+    text-align: right;  /* Aligns text to the right */
+    position: absolute;
+    font-family: "basic-sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px; 
+    width: 50%;
+    top: 30%; 
+    right: 5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    line-height: 1.6; 
+    word-wrap: break-word;
+}
+.mixer {
+    height: 900px; 
+  }
+
+.AssemblyHeading {
+    color: rgb(133, 226, 255); /* Adjust as needed */
+    font-family: "basic-sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 90px;
+    text-align: center;
+    margin: 0; /* Remove any margin that might be causing distance */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.drawing-container {
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; /* Vertically centers images */
+    flex-wrap: wrap; 
+    margin-top: 10px; 
+}
+
+.drawing {
+    max-width: 30%; /* Adjust to make sure images fit within the page */
+    height: auto; /* Keeps the aspect ratio intact */
+    margin: 5px;  /* Adjust the space between images */
+}
+#Mdraw1 {
+    max-width: 20%; 
+}
+#Mdraw2 {
+    max-width: 30%;
+}
+#Mdraw3 {
+    max-width: 35%;
+}
+
+.Final {
+    color: rgb(133, 226, 255); /* Adjust as needed */
+    font-family: "basic-sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 90px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 0; /* Remove default margin for the h2 */
+}
+
+.final-container {
+    display: flex;
+    flex-direction: column;   /* Stack images vertically */
+    align-items: center;      /* Center images horizontally */
+    justify-content: center;  /* Align content vertically in the center */
+}
+
+.Final {
+    max-width: 80%;
+    height: auto;
+}
+.Cat {
+    position: absolute;  /* Positions the image relative to the nearest positioned ancestor */
+    top: 20px;           /* Adjusts the distance from the top */
+    right: 40px;          /* Adjusts the distance from the left */
+    width: 80px;        /* Optionally, adjust the size of the image */
+    height: auto;        /* Maintains the aspect ratio */
+}
+.Cat {
+    transition: transform 0.3s ease; /* Adds a smooth transition */
+}
+
+.Cat:hover {
+    transform: scale(1.2) scaleX(-1); /* Enlarges and flips horizontally on hover */
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Connection!!</title>
+        <div class="connection-container">
+            <img src="connection.png" alt="Connection parts" id="connection" class="connection">
+            <img src="connection2.png" alt="Connection parts" id="connection2" class="connection">
+            <img src="connection3.png" alt="Connection parts" id="connection3" class="connection">
+        </div>
+
+
+
+        <link rel="stylesheet" href="https://use.typekit.net/aar7jsq.css">
+        <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>云层动态特效</title>
+        <link rel="stylesheet" href="connection.css">
+
+       <style>
+			body { margin: 0; }
+		</style>
+        <div class="satic-area">
+            <div class="dynamic-area1"></div>
+            <div class="dynamic-area2"></div>
+        </div>
+    </head> 
+    <body>
+        <img src="CatMain.png" alt="Main Cat" id="Cat" class="Cat">
+
+        <main class="wrapper">
+        <!-- First Heading -->
+        <h1 class="firstHeading"> </h1>
+        <h1 class="secondHeading"> </h1>
+
+    </main>
+    
+        <script src="connection.js"></script>
+        <script src="snowflakeCursor.js"></script>
+
+<!-- You can initialize it after the page is loaded -->
+<script>
+	window.addEventListener("load", () => {
+	new cursoreffects.snowflakeCursor();
+	  
+	});
+  </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,66 @@
+#text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1); /* Center and apply scaling */
+    font-size: 80px;
+    font-family: "Cinzel", fantasy;
+    color: skyblue;
+    text-shadow: 
+        1px 1px 0px #bc3e3e,  
+        -1px -1px 0px #7e9fff,  
+        1px -1px 0px #00b4a5,  
+        -1px 1px 0px #bfff00, 
+        0px 0px 5px rgba(200, 0, 255, 0.2),  /* outer shadow */
+        0px 0px 10px rgb(0, 106, 164);  /* outer glow */
+    letter-spacing: 3px;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+    overflow: hidden; /* Prevents text from overflowing */
+    white-space: nowrap; /* Prevent wrapping */
+    
+    /* Initial state for animation (invisible by default) */
+    clip-path: inset(0 100% 0 0); /* Initially hide the text from the right side */
+    animation: typing 5s steps(40) forwards, cursor 0.75s step-end infinite;
+}
+
+/* Animation for the typing effect */
+@keyframes typing {
+    from { clip-path: inset(0 100% 0 0); }  /* Start with the text hidden */
+    to { clip-path: inset(0 0 0 0); }      /* Reveal the text */
+}
+
+/* Cursor animation */
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+/* Optional: Cursor effect (only for visual) */
+#text-overlay:after {
+    content: '|';
+    display: inline-block;
+    margin-left: 5px;
+    border-left: 3px solid white; /* Cursor effect */
+    animation: cursor 0.75s step-end infinite;
+}
+
+/* Ensure no shifting occurs */
+#text-overlay:after {
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+.Cat {
+    position: absolute;  /* Positions the image relative to the nearest positioned ancestor */
+    top: 20px;           /* Adjusts the distance from the top */
+    left: 40px;          /* Adjusts the distance from the left */
+    width: 80px;         /* Optionally, adjust the size of the image */
+    height: auto;        /* Maintains the aspect ratio */
+    transform: scaleX(-1);  /* Initially flipped horizontally */
+    transition: transform 0.3s ease; /* Adds a smooth transition */
+}
+
+/* When hovered, the image enlarges without flipping */
+.Cat:hover {
+    transform: scale(1.2) scaleX(-1); /* Enlarge and reset the flip */
+}
