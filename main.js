@@ -220,7 +220,7 @@ function addModel5() {
     //Load our model
     loader.load('HipJoint.glb', (gltf) => {
         const model = gltf.scene;
-        model.position.set(-0.02, 0, 0.15);
+        model.position.set(-0.02, 0, -0.15);
         model.scale.set(3, 3, 3);
 
         model.traverse((child) => {
